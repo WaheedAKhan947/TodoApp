@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MdOutlineDelete, MdEditNote, MdCheck } from "react-icons/md";
+import { MdOutlineDelete, MdCheck } from "react";
 const App = () => {
   const [greenButton, setGreenButton] = useState(false);
 
