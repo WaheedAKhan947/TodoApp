@@ -20,6 +20,8 @@ const App = () => {
     updatedTodoArr.push(newTodoItem);
     setAllTasks(updatedTodoArr);
     localStorage.setItem("todolist", JSON.stringify(updatedTodoArr));
+    setNewTitle("");
+    setNewDescription("");
   };
 
   const handleDeleteTodo = (index) => {
@@ -61,7 +63,7 @@ const App = () => {
       setAllTasks(savedList);
     }
     if (savedCompletedList) {
-      setAllTasks(savedCompletedList);
+      setCompletedTasks(savedCompletedList);
     }
   }, []);
   return (
