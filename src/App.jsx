@@ -69,7 +69,7 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-bold text-center">Your Todo App</h1>
+        <h1 className="text-3xl font-bold text-center">TechCreator's Todo App</h1>
         <div className="bg-gray-800 m-8 p-8 flex flex-col items-start gap-8 w-fit">
           <div className="flex justify-center items-start md:items-end flex-col md:flex-row gap-8 text-white">
             <div className="flex flex-col gap-y-3 text-xl md:text-lg">
@@ -99,22 +99,22 @@ const App = () => {
             </div>
           </div>
           <div className="flex ">
-            <div className="  text-xl md:text-lg ">
+            <div className="text-white text-xl md:text-lg ">
               <button
                 type="button"
                 className={`p-2 ${
-                  greenButton === false ? "bg-green-500" : "bg-gray-500"
+                  greenButton === false ? "bg-green-500" : "bg-gray-700"
                 }`}
                 onClick={() => setGreenButton(false)}
               >
                 To do
               </button>
             </div>
-            <div className="  text-xl md:text-lg ">
+            <div className="text-white text-xl md:text-lg ">
               <button
                 type="button"
                 className={`p-2 ${
-                  greenButton === true ? "bg-green-500" : "bg-gray-500"
+                  greenButton === true ? "bg-green-500" : "bg-gray-700"
                 }`}
                 onClick={() => setGreenButton(true)}
               >
@@ -179,6 +179,7 @@ const App = () => {
               );
             })}
         </div>
+        <p className="mb-3"> Developed by Waheed A Khan &copy; {new Date().getFullYear()} </p>
       </div>
     </>
   );
